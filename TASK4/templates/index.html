@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Scraper Dashboard</title>
+
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="hero">
+
+            <h1>🛒 Product Scraper Dashboard</h1>
+
+            <p>
+                Extract product names, prices and ratings from an
+                e-commerce website and export them to CSV.
+            </p>
+
+            <div class="buttons">
+                <button id="scrapeBtn">
+                    Scrape Products
+                </button>
+
+                <a href="/download">
+                    <button id="downloadBtn">
+                        Download CSV
+                    </button>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>Total Products</h3>
+                <span id="productCount">0</span>
+            </div>
+
+            <div class="card">
+                <h3>Highest Rating</h3>
+                <span id="bestRating">-</span>
+            </div>
+
+            <div class="card">
+                <h3>Status</h3>
+                <span id="status">Ready</span>
+            </div>
+
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+        </div>
+
+        <div id="loader" class="loader hidden"></div>
+
+        <div id="productsContainer" class="products-grid">
+
+        </div>
+
+    </div>
+
+    <script src="/static/script.js"></script>
+
+</body>
+
+</html>

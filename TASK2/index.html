@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number Guessing Game</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Patrick+Hand&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="page">
+
+    <div class="left-panel">
+
+        <h1 class="logo">
+            <span>number</span>
+            <span>guessing</span>
+            <span>game</span>
+        </h1>
+
+        <div class="sticky-note">
+            <h3>HOW TO PLAY</h3>
+
+            <ul>
+                <li>Think of a number between 1 and 100</li>
+                <li>Type your guess</li>
+                <li>See if you're low or high</li>
+            </ul>
+
+            <div class="smiley">☺</div>
+        </div>
+
+    </div>
+
+
+    <div class="game-card">
+
+        <h2>guess a number between 1 and 100</h2>
+
+        <input
+            type="number"
+            id="guessInput"
+            placeholder="enter your guess..."
+        >
+
+        <button onclick="checkGuess()">
+            CHECK
+        </button>
+
+        <div id="message">
+            Make your first guess!
+        </div>
+
+        <button class="restart" onclick="restartGame()">
+            NEW GAME ↻
+        </button>
+
+    </div>
+
+
+    <div class="stats">
+
+        <div class="box attempts">
+            <h3>ATTEMPTS</h3>
+            <span id="attempts">0</span>
+        </div>
+
+        <div class="box score">
+            <h3>BEST SCORE</h3>
+            <span id="bestScore">-</span>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="tip">
+💡 Tip: The number changes every game!
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

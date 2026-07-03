@@ -1,0 +1,197 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:#171926;
+font-family:'Patrick Hand',cursive;
+min-height:100vh;
+color:white;
+overflow-x:hidden;
+}
+
+.page{
+display:flex;
+justify-content:center;
+align-items:flex-start;
+gap:60px;
+padding:60px;
+}
+
+.logo{
+display:flex;
+flex-direction:column;
+font-size:4rem;
+line-height:0.9;
+}
+
+.logo span:nth-child(1){
+color:#e7c36f;
+}
+
+.logo span:nth-child(2){
+color:#ff8577;
+}
+
+.logo span:nth-child(3){
+color:#a4c493;
+}
+
+.sticky-note{
+width:280px;
+background:#e7cf95;
+color:#222;
+padding:25px;
+margin-top:50px;
+transform:rotate(-2deg);
+box-shadow:0 10px 20px rgba(0,0,0,.3);
+position:relative;
+}
+
+.sticky-note h3{
+font-family:'Special Elite',cursive;
+margin-bottom:15px;
+}
+
+.sticky-note ul{
+padding-left:18px;
+}
+
+.smiley{
+font-size:2rem;
+text-align:right;
+margin-top:10px;
+}
+
+.game-card{
+background:#232837;
+padding:40px;
+width:550px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,.35);
+}
+
+.game-card h2{
+text-align:center;
+font-family:'Special Elite',cursive;
+font-size:2rem;
+font-weight:normal;
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:18px;
+background:#1c2130;
+border:2px solid #d9bf7b;
+border-radius:8px;
+font-size:1.4rem;
+color:white;
+outline:none;
+}
+
+button{
+border:none;
+cursor:pointer;
+}
+
+.game-card button{
+display:block;
+margin:25px auto;
+padding:15px 45px;
+background:#ff8577;
+font-size:1.3rem;
+font-family:'Special Elite',cursive;
+border-radius:6px;
+box-shadow:0 5px 0 #c75e52;
+}
+
+.game-card button:hover{
+transform:translateY(2px);
+}
+
+#message{
+border:2px dashed #8f7f5c;
+padding:25px;
+margin-top:25px;
+text-align:center;
+font-size:1.4rem;
+color:#d9bf7b;
+}
+
+.restart{
+margin-top:30px !important;
+background:#b8cf9f !important;
+box-shadow:0 5px 0 #799063 !important;
+color:#222;
+}
+
+.stats{
+display:flex;
+flex-direction:column;
+gap:40px;
+}
+
+.box{
+width:220px;
+height:200px;
+border-radius:14px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.attempts{
+border:2px solid #8f72b8;
+}
+
+.attempts h3{
+color:#bfa6ea;
+font-family:'Special Elite',cursive;
+}
+
+.attempts span{
+font-size:5rem;
+color:#bfa6ea;
+}
+
+.score{
+border:2px solid #a5bb75;
+}
+
+.score h3{
+color:#d7ea8d;
+font-family:'Special Elite',cursive;
+}
+
+.score span{
+font-size:5rem;
+color:#d7ea8d;
+}
+
+.tip{
+text-align:center;
+padding-bottom:25px;
+font-size:1.4rem;
+color:#ff9e8f;
+}
+
+@media(max-width:1200px){
+
+.page{
+flex-direction:column;
+align-items:center;
+}
+
+.logo{
+text-align:center;
+}
+
+.stats{
+flex-direction:row;
+}
+
+}

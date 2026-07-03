@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <div>
+            <h1>Sudoku Solver</h1>
+            <p>A classic puzzle solver built with JavaScript</p>
+        </div>
+
+        <div class="task-badge">
+            TASK 03
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="board-container">
+            <div id="board"></div>
+        </div>
+
+        <div class="sidebar">
+
+            <div class="note">
+                <h3>About</h3>
+                <p>
+                    Enter your own Sudoku puzzle or use the preloaded one.
+                    Click Solve Puzzle to instantly generate the solution.
+                </p>
+            </div>
+
+            <div class="controls">
+
+                <h3>Controls</h3>
+
+                <button id="solveBtn">
+                    Solve Puzzle
+                </button>
+
+                <button id="resetBtn">
+                    Reset Puzzle
+                </button>
+
+                <div id="status">
+                    Ready to solve.
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

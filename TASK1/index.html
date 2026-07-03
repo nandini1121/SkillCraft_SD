@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="doodle doodle1">☁️</div>
+    <div class="doodle doodle2">✨</div>
+    <div class="doodle doodle3">🌙</div>
+    <div class="doodle doodle4">⭐</div>
+
+    <div class="container">
+
+        <h1>Temperature Converter</h1>
+
+        <input
+            type="number"
+            id="temperature"
+            placeholder="Enter Temperature"
+        >
+
+        <label>From</label>
+        <select id="fromUnit">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+        </select>
+
+        <label>To</label>
+        <select id="toUnit">
+            <option value="celsius">Celsius (°C)</option>
+            <option value="fahrenheit">Fahrenheit (°F)</option>
+            <option value="kelvin">Kelvin (K)</option>
+        </select>
+
+        <button onclick="convertTemperature()">
+            Convert
+        </button>
+
+        <div id="result">
+            Result: --
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
